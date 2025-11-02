@@ -1,10 +1,16 @@
 import { useState } from 'react';
-import { TopBar } from '../ex/TopBar';
-import { BottomStatusBar } from '../ex/BottomStatusBar';
-import { MainDashboard } from '../ex/screens/MainDashboard';
-import { WellnessMonitor } from '../ex/screens/WellnessMonitor';
-import { EmergencyProtocol } from '../ex/screens/EmergencyProtocol';
-import { AICoPilot } from '../ex/screens/AICoPilot';
+// @ts-ignore
+import TopBar from './components/common/TopBar.jsx';
+// @ts-ignore
+import BottomBar from './components/common/BottomBar.jsx';
+// @ts-ignore
+import Dashboard from './components/dashboard/Dashboard.jsx';
+// @ts-ignore
+import WellnessMonitor from './components/wellness/WellnessMonitor.jsx';
+// @ts-ignore
+import EmergencyProtocol from './components/emergency/EmergencyProtocol.jsx';
+// @ts-ignore
+import AICoPilot from './components/copilot/AICoPilot.jsx';
 
 type Screen = 'dashboard' | 'wellness' | 'emergency' | 'copilot';
 
@@ -14,7 +20,7 @@ export default function App() {
   const renderScreen = () => {
     switch (currentScreen) {
       case 'dashboard':
-        return <MainDashboard />;
+        return <Dashboard />;
       case 'wellness':
         return <WellnessMonitor />;
       case 'emergency':
@@ -22,7 +28,7 @@ export default function App() {
       case 'copilot':
         return <AICoPilot />;
       default:
-        return <MainDashboard />;
+        return <Dashboard />;
     }
   };
 
@@ -80,7 +86,7 @@ export default function App() {
         {/* Screen Content */}
         {renderScreen()}
         
-        <BottomStatusBar />
+        <BottomBar />
       </div>
     </div>
   );

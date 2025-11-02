@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useWellnessData } from '../../hooks/useWellnessData';
 import PrimaryMetricCard from './PrimaryMetricCard';
 import EmotionRecognitionCard from './EmotionRecognitionCard';
