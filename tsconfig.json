@@ -13,6 +13,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src", "./**/*.ts", "./**/*.tsx"],
+  "include": ["src", "./**/*.ts", "./**/*.tsx", "ex/ui", "ex/screens"],
   "exclude": ["node_modules"]
 }

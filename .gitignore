@@ -1,63 +1,35 @@
-# Node
+# Dependencies
 node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production
+dist/
+build/
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 
-# Vite / build output
-dist/
-build/
-out/
-.vite/
-
-# Production
-.env.production
-
-# Local env files
-.env
-.env.local
-.env.*.local
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-error.log*
-
-# OS
-.DS_Store
-
-# Editors
+# IDE
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+*.swp
+*.swo
+*~
 
-# TypeScript
-*.tsbuildinfo
+# Vite
+.vite/
 
-# Coverage
-coverage/
-.nyc_output/
-
-# Test
-jest.config.ts
-
-# Cache
-.cache/
-.parcel-cache/
-
-# Misc
-.pnp/
-.pnp.js
-.pnp.cjs
-.eslintcache
-
-# Optional: Python/virtualenvs (in case contributors use them)
-venv/
-ENV/
-env/
-.venv/
+ex
