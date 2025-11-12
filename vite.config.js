@@ -7,7 +7,8 @@ export default defineConfig({
     port: 3000,
     host: true // For car display network access
   },
-  base: '/i.mobilothon_Volkswagen_team_manusmriti-frontend/', // ✅ must match repo name
+
+  base: process.env.BASE_URL || '/',
   build: {
     outDir: 'dist',
     sourcemap: false,
