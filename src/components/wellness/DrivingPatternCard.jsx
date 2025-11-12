@@ -3,11 +3,11 @@ import Card from '../common/Card';
 import MetricCard from '../common/MetricCard';
 
 const DrivingPatternCard = ({ pattern }) => (
-  <Card className="p-8">
-    <div className="text-gray-400 text-xs tracking-widest uppercase mb-5">
+  <Card className="p-4 sm:p-6 lg:p-8">
+    <div className="text-gray-400 text-xs tracking-widest uppercase mb-4 sm:mb-5">
       DRIVING PATTERN ANALYSIS
     </div>
-    <div className="grid grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
       <MetricCard 
         label="Lane Keeping" 
         value={pattern.laneKeeping} 
